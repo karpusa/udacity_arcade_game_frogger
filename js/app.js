@@ -1,3 +1,5 @@
+"use strict";
+
 var ENEMY_RESET_START_X = -101;
 var ENEMY_START_X = [-101, 0, 101, 202, 303, 404, 505];
 var ENEMY_START_Y = [62, 144, 228];
@@ -95,7 +97,7 @@ Enemy.prototype.collision = function() {
         (this.y >= player.y-83+26) && (this.y <= player.y+83-26)) {
             gameEnd('end');
     }
-}
+};
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
@@ -212,7 +214,7 @@ Player.prototype.handleInput = function(key) {
 * Create instances of enemies in the game
 */
 function createEnemies(number) {
-    for (i = 0; i < number; i++) {
+    for (var i = 0; i < number; i++) {
         var enemy = new Enemy();
         allEnemies.push(enemy);
     }
@@ -249,8 +251,8 @@ function gameEnd(status) {
 }
 
 
-var player = new Player();
-allEnemies = [];
+var player = new Player(),
+    allEnemies = [];
 createEnemies(CREATE_ENEMIES);
 
 soundGameMusic.play();
