@@ -141,7 +141,7 @@ Player.prototype.canPlay = function() {
 Player.prototype.setPlay = function(status) {
     if (status===false) {
         resetEnemies();
-        player.reset();
+        this.reset();
         soundGameMusic.stop();
         soundGameEnd.play();
     } else {
