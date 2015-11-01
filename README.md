@@ -17,7 +17,11 @@ Open index.html in browser.
 #References
 
 http://codeincomplete.com/posts/2013/12/10/javascript_game_foundations_state_management/
+
 http://caspervonb.com/archive/javascript-game-development-game-states/
+
 http://stackoverflow.com/questions/18038502/how-to-code-a-html5-game-with-distinct-game-states
+
 http://gamedevelopment.tutsplus.com/tutorials/finite-state-machines-theory-and-implementation--gamedev-11867
+
 https://github.com/jakesgordon/javascript-state-machine
